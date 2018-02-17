@@ -1,15 +1,21 @@
-<style lang="scss">
+<style lang="scss" scoped>
+.quest-title {
+  margin: 0 0 10px;
+}
+.quest-text {
+  font-size: 15px;
+}
 </style>
 
 <template>
   <div class="ui grid container">
     <div class="row ui segment">
-      <div class="column ten wide centered">
-        <img class="ui image left floated" :src="current.img">
-        <h3>
+      <div class="column ten wide">
+        <img class="ui image medium left floated" :src="'/static/' + current.img">
+        <h3 class="quest-title">
           {{ current.title }}
         </h3>
-        <p>
+        <p class="quest-text">
           {{ current.text }}
         </p>
       </div>
@@ -26,14 +32,14 @@
           </div>
         </div>
         <div class="image">
-          <img :src="s.img">
+          <img :src="'/static/' + s.img">
         </div>
         <div class="content">
           <div class="description">
             {{ s.text }}
           </div>
         </div>
-        <div v-if="!choose(i)" class="ui bottom attached button">
+        <div v-if="!ifChosen(i)" class="ui bottom attached button">
           <i class="add icon"></i>
           Wybierz Kartę
         </div>
@@ -52,17 +58,14 @@ import { mapGetters } from 'vuex'
 export default {
   computed: mapGetters([
     'index',
-    'chosen',
+    'ifChosen',
     'percent',
     'current',
     'user_skills'
-    ]),
+  ]),
   methods: {
     select(index) {
       this.$store.commit('chose', index)
-    },
-    choose(index) {
-      return this.chosen(index)
     },
   }
 }

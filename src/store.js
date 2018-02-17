@@ -5,7 +5,7 @@ import skills from '@/data/skills'
 
 Vue.use(Vuex)
 
-const user_skill = [0, 1, 4, 5]
+const user_skill = [0, 2, 4, 5]
 
 const store = new Vuex.Store({
   state: {
@@ -19,6 +19,10 @@ const store = new Vuex.Store({
     // doneTodos: state => {
     //   return state.todos.filter(todo => todo.done)
     // },
+    defense: (state, getters) => {
+      const { skill } = getters.current
+      return state.skills.filter((s, i) => skill.includes(i))
+    },
     percent: state => state.percent,
     index: state => state.index,
     current: state => {
@@ -26,8 +30,18 @@ const store = new Vuex.Store({
         return state.danger[state.index]
       }
     },
-    chosen: state => index => {
+    chosen: (state, getters) => {
+      return getters.user_skills.filter((s, i) => state.chosen.includes(i))
+    },
+    ifChosen: state => index => {
       return state.chosen.includes(index)
+    },
+    ifSuccess: (state, getters) => index => {
+      const { skill } = getters.current;
+      console.log('SUCCESS !!!!!!!!!!!')
+      console.log(skill)
+      console.log(index)
+      return skill.includes(index)
     },
     user_skills: state => {
       return state.skills.filter((s, i) => user_skill.includes(i))
