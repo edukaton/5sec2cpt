@@ -19,6 +19,7 @@ const store = new Vuex.Store({
     // doneTodos: state => {
     //   return state.todos.filter(todo => todo.done)
     // },
+    percent: state => state.percent,
     index: state => state.index,
     current: state => {
       if (state.index < state.danger.length) {
