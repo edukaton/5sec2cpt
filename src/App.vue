@@ -1,6 +1,8 @@
 <template>
-  <div id="app" class="main ui container">
-    <router-view/>
+  <div id="app">
+    <div class="main ui container">
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -11,4 +13,8 @@ export default {
 </script>
 
 <style>
+  #app {
+    background-image: url('assets/landing_bcg.png');
+    min-height: 100vh;
+  }
 </style>
