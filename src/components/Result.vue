@@ -24,10 +24,13 @@
     </div>
     <div class="ui divider"></div>
     <div class="row centered">
+      <button @click="next" to="rozwiazanie" class="ui secondary button huge">Dalej</button>
+    </div>
+    <div class="row centered">
       <h1>Twoja obrona</h1>
     </div>
     <div class="ui row ui four doubling centered cards">
-      <div v-if="ifChosen(i)" v-for="s, i in user_skills" class="ui card fluid" :class="ifSuccess(i) ? '' : 'fail'">
+      <div v-for="s in chosen" class="ui card fluid" :class="ifSuccess(s.id) ? '' : 'fail'">
         <div class="content">
           <div class="header">
             {{ s.title }}
@@ -41,7 +44,7 @@
             {{ s.text }}
           </div>
         </div>
-        <div v-if="ifSuccess(i)" class="ui bottom green attached button">
+        <div v-if="ifSuccess(s.id)" class="ui bottom green attached button">
           Sukces!
         </div>
         <div v-else class="ui bottom red attached button">
@@ -64,7 +67,12 @@ export default {
     'ifChosen',
     'ifSuccess',
     'current',
-    'user_skills'
   ]),
+  methods: {
+    next() {
+      this.$store.commit('next')
+      this.$router.push('/gra/zagrozenie')
+    },
+  }
 }
 </script>

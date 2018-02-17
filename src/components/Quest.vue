@@ -22,10 +22,10 @@
     </div>
     <!-- <div class="ui divider"></div> -->
     <div class="row centered">
-      <router-link to="rozwiazanie" class="ui secondary button huge">Sprawdzam</router-link>
+      <bitton @click="answer" to="rozwiazanie" class="ui secondary button huge">Sprawdzam</bitton>
     </div>
     <div class="ui row ui four doubling cards">
-      <div v-for="s, i in user_skills" class="ui card fluid link" @click="select(i)">
+      <div v-for="s in user_skills" class="ui card fluid link" @click="select(s.id)">
         <div class="content">
           <div class="header">
             {{ s.title }}
@@ -39,7 +39,7 @@
             {{ s.text }}
           </div>
         </div>
-        <div v-if="!ifChosen(i)" class="ui bottom attached button">
+        <div v-if="!ifChosen(s.id)" class="ui bottom attached button">
           <i class="add icon"></i>
           Wybierz Kartę
         </div>
@@ -57,8 +57,8 @@ import { mapGetters } from 'vuex'
 
 export default {
   computed: mapGetters([
-    'index',
     'ifChosen',
+    'chose',
     'percent',
     'current',
     'user_skills'
@@ -66,6 +66,10 @@ export default {
   methods: {
     select(index) {
       this.$store.commit('chose', index)
+    },
+    answer() {
+      this.$store.commit('answer')
+      this.$router.push('/gra/rozwiazanie')
     },
   }
 }

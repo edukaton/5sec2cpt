@@ -11,7 +11,7 @@ const store = new Vuex.Store({
   state: {
     danger,
     skills,
-    percent: 80,
+    percent: 50,
     index: 0,
     chosen: [],
   },
@@ -21,7 +21,7 @@ const store = new Vuex.Store({
     // },
     defense: (state, getters) => {
       const { skill } = getters.current
-      return state.skills.filter((s, i) => skill.includes(i))
+      return state.skills.filter((s) => skill.includes(s.id))
     },
     percent: state => state.percent,
     index: state => state.index,
@@ -31,24 +31,25 @@ const store = new Vuex.Store({
       }
     },
     chosen: (state, getters) => {
-      return getters.user_skills.filter((s, i) => state.chosen.includes(i))
+      return getters.user_skills.filter(s => state.chosen.includes(s.id))
     },
-    ifChosen: state => index => {
-      return state.chosen.includes(index)
+    ifChosen: state => id => {
+      return state.chosen.includes(id)
     },
     ifSuccess: (state, getters) => index => {
-      const { skill } = getters.current;
-      console.log('SUCCESS !!!!!!!!!!!')
-      console.log(skill)
-      console.log(index)
+      const { skill } = getters.current
       return skill.includes(index)
     },
     user_skills: state => {
-      return state.skills.filter((s, i) => user_skill.includes(i))
+      return state.skills.filter(s => user_skill.includes(s.id))
     }
   },
   mutations: {
+    answer(state) {
+      // TODO: recalculate
+    },
     next(state) {
+      state.chosen = []
       state.index++
     },
     chose(state, index) {
