@@ -6,6 +6,7 @@ import Result from '@/components/Result'
 import LandingPage from '@/components/LandingPage'
 import NewScenario from '@/components/NewScenario'
 import ChooseHero from '@/components/ChooseHero'
+import Competences from '@/components/Competences'
 
 Vue.use(Router)
 
@@ -34,6 +35,10 @@ export default new Router({
   path: '/nowy-scenariusz',
   name: 'NewScenario',
   component: NewScenario
+}, {
+  path: '/kompetencje',
+  name: 'Competences',
+  component: Competences
 }, {
   path: '/wybor-postaci',
   name: 'ChooseHero',
