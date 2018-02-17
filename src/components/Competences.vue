@@ -1,16 +1,16 @@
 <template>
   <div>
     <h1 class="ui header">
-      Wybierz swojego bohatera
+      Twój bohater ma takie umiejętności
       <div class="sub header">
-        Wybierz bohatera
+       Przeczytaj opis
       </div>
     </h1>
     <div class="ui row ui four doubling cards">
       <div class="ui card fluid link">
         <div class="content">
           <div class="header">
-            Hipster
+            Tor
           </div>
         </div>
         <div class="image">
@@ -18,18 +18,18 @@
         </div>
         <div class="content text">
           <div class="description">
-            Alternatywna wyszukiwarka? Podawanie danych z kosmosu? Wyszukiwanie „gwiazdek” i „drobnych druczków” w regulaminach? Hipster nie da się oszukać. Chronisz się przed zagrożeniami w sieci przede wszystkim dlatego, że jest to na czasie. Zapominasz jednak o podstawowych zabezpieczeniach, ponieważ bardziej niż prywatność cenisz sobie rozpoznawalność i bycie zawsze online.
+            Łączysz się z Internetem za pomocą Tora – narzędzia, które zapewnia użytkownikom anonimowe korzystanie z zasobów Internetu oraz usług dostępnych tylko za jego pomocą.
           </div>
         </div>
         <div class="ui bottom attached button" @click="selectHero()">
           <i class="add icon"></i>
-          Wybierz Kartę
+          Zobacz poradę
         </div>
       </div>
       <div class="ui card fluid link">
         <div class="content">
           <div class="header">
-            Haker
+            Unikanie śledzenie
           </div>
         </div>
         <div class="image">
@@ -37,18 +37,18 @@
         </div>
         <div class="content text">
           <div class="description">
-            Jesteś urodzonym łamaczem kodów i dlatego szyfrujesz wszystko co się da: maile, pliki i smsy. Nikt nie może dostać się do Twoich dysków. Masz jednak słabość do nowinek technologicznych i nie zawsze skutecznie zabezpieczasz się przed manipulacjami w sieci.
+            Zdajesz sobie sprawę z tego, że każdy Twój ruch w sieci jest śledzony przez wiele podmiotów. Korzystasz z rozwiązań, które pomagają Ci się przed tym bronić
           </div>
         </div>
         <div class="ui bottom attached button" @click="selectHero()">
           <i class="add icon"></i>
-          Wybierz Kartę
+          Zobacz poradę
         </div>
       </div>
       <div class="ui card fluid link">
         <div class="content">
           <div class="header">
-            Cwaniak
+            Alternatywna przeglądarka
           </div>
         </div>
         <div class="image">
@@ -56,19 +56,18 @@
         </div>
         <div class="content text">
           <div class="description">
-            Wiesz, że jakakolwiek obecność i aktywność w sieci zostawia po sobie ślad. Dlatego ograniczasz ją do minimum – kupujesz w realu, nie korzystasz z mediów społecznościowych i dysków do przechowywania danych w chmurze. Przez to odcinasz się od wielu potrzebnych Ci informacji, które mógłbyś znaleźć w sieci. Wiele rzeczy zajmuje Ci też duuużo czasu.
-
+            Korzystasz z wyszukiwarki, która – w przeciwieństwie do najpopularniejszej w sieci – nie buduje, w oparciu o wpisywane słowa, Twojego profilu dla reklamodawców ani nie dostosowuje do niego wyników wyszukiwania.
           </div>
         </div>
         <div class="ui bottom attached button" @click="selectHero()">
           <i class="add icon"></i>
-          Wybierz Kartę
+          Zobacz poradę
         </div>
       </div>
       <div class="ui card fluid link">
         <div class="content">
           <div class="header">
-            Agent
+            Ustawienia prywatności
           </div>
         </div>
         <div class="image">
@@ -76,12 +75,12 @@
         </div>
         <div class="content text">
           <div class="description">
-            Nie jesteś mocny w kodowaniu, ale dobrze znasz dostępne w sieci narzędzia do zabezpieczania się przed kradzieżą danych. Blokujesz reklamy, kładziesz nacisk na mocne hasła i włączasz ustawienia prywatności. Twoja przeglądarka to za każdym uruchomieniem terra incognita. Mimo ostrożności, nadal możesz paść ofiarą „fake newsów” i dezinformacji.
+            Nie zdajesz się na domyślne rozwiązania. Zmieniasz ustawienia Twojej przeglądarki internetowej tak, by lepiej chroniła Twoją prywatność.
           </div>
         </div>
         <div class="ui bottom attached button" @click="selectHero()">
           <i class="add icon"></i>
-          Wybierz Kartę
+          Zobacz poradę
         </div>
       </div>
     </div>
@@ -107,10 +106,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.reveal {
-  min-height: 160px;
-}
-.content.text {
-  min-height: 290px;
-}
+  .reveal {
+    min-height: 160px;
+  }
 </style>

@@ -6,6 +6,9 @@
         <router-link to="/wybor-postaci" class="ui primary button">
           Graj
         </router-link>
+        <router-link to="/nowy-scenariusz" class="ui primary button">
+          Dodaj
+        </router-link>
       </li>
     </ul>
   </div>
