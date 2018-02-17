@@ -3,7 +3,7 @@
 
 <template>
   <div class="ui grid container">
-    <div class="row">
+    <div class="row ui segment">
       <div class="column ten wide centered">
         <img class="ui image left floated" :src="current.img">
         <h3>
@@ -16,7 +16,7 @@
     </div>
     <!-- <div class="ui divider"></div> -->
     <div class="row centered">
-      <h1>Wybierz 2 Umiejętności Obronne</h1>
+      <router-link to="rozwiazanie" class="ui secondary button huge">Sprawdzam</router-link>
     </div>
     <div class="ui row ui four doubling cards">
       <div v-for="s, i in user_skills" class="ui card fluid link" @click="select(i)">
