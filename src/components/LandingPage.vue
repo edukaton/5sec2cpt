@@ -3,9 +3,9 @@
     <h1>{{ msg }}</h1>
     <ul>
       <li>
-        <button class="ui primary button">
+        <router-link to="/wybor-postaci" class="ui primary button">
           Graj
-        </button>
+        </router-link>
       </li>
     </ul>
   </div>
