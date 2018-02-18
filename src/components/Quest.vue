@@ -11,7 +11,7 @@
   <div class="ui grid container">
     <div class="row ui segment">
       <div class="column ten wide">
-        <img class="ui image medium left floated" :src="'/5sec2cpt/static/' + current.img">
+        <img class="ui image medium left floated" :src="'static/' + current.img">
         <h3 class="quest-title">
           {{ current.title }}
         </h3>
@@ -22,7 +22,7 @@
     </div>
     <!-- <div class="ui divider"></div> -->
     <div class="row centered">
-      <bitton @click="answer" to="rozwiazanie" class="ui secondary button huge">Sprawdzam</bitton>
+      <button @click="answer" to="rozwiazanie" class="ui secondary button huge">Sprawdzam</button>
     </div>
     <div class="ui row ui four doubling cards">
       <div v-for="s in user_skills" class="ui card fluid link" @click="select(s.id)">
@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="image">
-          <img :src="'/5sec2cpt/static/' + s.img">
+          <img :src="'static/' + s.img">
         </div>
         <div class="content">
           <div class="description">

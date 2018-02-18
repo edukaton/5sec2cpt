@@ -12,7 +12,7 @@
     <div class="ui row ui six centered doubling cards">
       <div v-for="s, i in defense" class="ui card fluid link">
         <div class="image">
-          <img :src="'/5sec2cpt/static/' + s.img">
+          <img :src="'static/' + s.img">
         </div>
         <div class="content">
           {{ s.title }}
@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="image">
-          <img :src="'/5sec2cpt/static/' + s.img">
+          <img :src="'static/' + s.img">
         </div>
         <div class="content">
           <div class="description">

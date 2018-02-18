@@ -11,6 +11,13 @@
 .body {
   padding-top: 120px;
 }
+.fade-enter-active, .fade-leave-active {
+  transition: all 0.3s linear;
+}
+.fade-enter, .fade-leave-to {
+  // transform: opacity 0.5s eas-in-out;
+  opacity: 0.5
+}
 </style>
 
 <template>
@@ -32,7 +39,9 @@
       </div>
     </div>
     <div class="body">
-      <router-view></router-view>
+      <transition name="fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
     </div>
   </div>
 </template>
