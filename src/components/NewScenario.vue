@@ -35,18 +35,18 @@
         <div class="ui row ui six doubling cards">
           <div v-for="s in all_skills" class="ui card fluid link">
             <div class="content">
-              <div class="header">
+              <h4 class="">
                 {{ s.title }}
-              </div>
+              </h4>
             </div>
             <div class="image">
               <img :src="'/5sec2cpt/static/' + s.img">
             </div>
-            <div v-if="!ifChosen(s.id)" class="ui bottom attached button">
+            <div v-if="!ifChosen(s.id)" class="ui bottom attached button" :style="'background-color: ' + s.hex + '; color: white'">
               <i class="add icon"></i>
               Wybierz Kartę
             </div>
-            <div v-else class="ui bottom green attached button">
+            <div v-else class="ui bottom green attached button" >
               <i class="checkmark icon"></i>
               Wybrano!
             </div>
