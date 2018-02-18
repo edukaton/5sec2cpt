@@ -5,8 +5,6 @@ import skills from '@/data/skills'
 
 Vue.use(Vuex)
 
-const user_skill = [0, 2, 4, 5]
-
 const store = new Vuex.Store({
   state: {
     danger,
@@ -19,6 +17,9 @@ const store = new Vuex.Store({
     // doneTodos: state => {
     //   return state.todos.filter(todo => todo.done)
     // },
+    all_skills: state => state.skills,
+    user_skills: state =>  state.skills.filter(s => [0, 2, 4, 5].includes(s.id)),
+    chosen_skills: state => state.skills.filter(s => state.chosen.includes(s.id)),
     defense: (state, getters) => {
       const { skill } = getters.current
       return state.skills.filter((s) => skill.includes(s.id))
@@ -40,16 +41,22 @@ const store = new Vuex.Store({
       const { skill } = getters.current
       return skill.includes(index)
     },
-    user_skills: state => {
-      return state.skills.filter(s => user_skill.includes(s.id))
-    },
-    all_skills: state => {
-      return state.skills
-    }
   },
   mutations: {
     answer(state) {
-      // TODO: recalculate
+      let answers = 0
+      const skills = state.danger[state.index].skill
+      for (let i in state.chosen) {
+        if (skills.includes(state.chosen[i])) {
+          answers++
+        }
+      }
+      if (answers === 0) {
+        return state.percent -= 10
+      }
+      if (answers === 2) {
+        return state.percent += 10
+      }
     },
     next(state) {
       state.chosen = []
@@ -60,7 +67,8 @@ const store = new Vuex.Store({
         state.chosen.splice(state.chosen.indexOf(index), 1)
       } else {
         if (state.chosen.length >= 2) {
-          // alert: możesz wybrać maksymalnie dwie karty!
+          state.chosen.shift()
+          state.chosen.push(index)
         } else {
           state.chosen.push(index)
         }

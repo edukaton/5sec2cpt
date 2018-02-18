@@ -10,7 +10,7 @@
 <template>
   <div class="ui grid container">
     <div class="row ui segment">
-      <div class="column ten wide">
+      <div class="column twelve wide">
         <img class="ui image medium left floated" :src="'static/' + current.img">
         <h3 class="quest-title">
           {{ current.title }}
@@ -20,7 +20,6 @@
         </p>
       </div>
     </div>
-    <!-- <div class="ui divider"></div> -->
     <div class="row centered">
       <button @click="answer" to="rozwiazanie" class="ui secondary button huge">Sprawdzam</button>
     </div>
