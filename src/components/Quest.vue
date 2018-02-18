@@ -9,7 +9,7 @@
 
 <template>
   <div class="ui grid container">
-    <div class="row ui segment">
+    <div class="row ui segment grey message">
       <div class="column twelve wide">
         <img class="ui image medium left floated" :src="'static/' + current.img">
         <h3 class="quest-title">

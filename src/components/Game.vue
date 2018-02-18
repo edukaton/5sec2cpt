@@ -25,7 +25,7 @@
       <div class="ui container">
         <div class="item">
           <h3>
-            Zagrożenie #{{ index + 1 }} {{ percent }}
+            Zagrożenie #{{ index + 1 }}
           </h3>
         </div>
         <div class="wrapper">

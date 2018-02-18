@@ -41,7 +41,7 @@
   }
   .icons {
     margin-bottom: 50px !important;
-    display: inline-block;
+    display: inline-block !important;
   }
   p.info {
     margin-top: 30px;
