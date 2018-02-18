@@ -14,16 +14,12 @@
           </div>
         </div>
         <div class="image">
-          <img src="./../assets/hipster.png">
+          <img :src="'/static/' + 'tor.png'">
         </div>
         <div class="content text">
           <div class="description">
             Łączysz się z Internetem za pomocą Tora – narzędzia, które zapewnia użytkownikom anonimowe korzystanie z zasobów Internetu oraz usług dostępnych tylko za jego pomocą.
           </div>
-        </div>
-        <div class="ui bottom attached button" @click="selectHero()">
-          <i class="add icon"></i>
-          Zobacz poradę
         </div>
       </div>
       <div class="ui card fluid link">
@@ -33,16 +29,12 @@
           </div>
         </div>
         <div class="image">
-          <img src="./../assets/haker.png">
+          <img :src="'/static/' + 'unikanie.png'">
         </div>
         <div class="content text">
           <div class="description">
             Zdajesz sobie sprawę z tego, że każdy Twój ruch w sieci jest śledzony przez wiele podmiotów. Korzystasz z rozwiązań, które pomagają Ci się przed tym bronić
           </div>
-        </div>
-        <div class="ui bottom attached button" @click="selectHero()">
-          <i class="add icon"></i>
-          Zobacz poradę
         </div>
       </div>
       <div class="ui card fluid link">
@@ -52,16 +44,12 @@
           </div>
         </div>
         <div class="image">
-          <img src="./../assets/cwaniak.png">
+          <img :src="'/static/' + 'alternatywna.png'">
         </div>
         <div class="content text">
           <div class="description">
             Korzystasz z wyszukiwarki, która – w przeciwieństwie do najpopularniejszej w sieci – nie buduje, w oparciu o wpisywane słowa, Twojego profilu dla reklamodawców ani nie dostosowuje do niego wyników wyszukiwania.
           </div>
-        </div>
-        <div class="ui bottom attached button" @click="selectHero()">
-          <i class="add icon"></i>
-          Zobacz poradę
         </div>
       </div>
       <div class="ui card fluid link">
@@ -71,17 +59,18 @@
           </div>
         </div>
         <div class="image">
-          <img src="./../assets/agent.png">
+          <img :src="'/static/' + 'ustawienia.png'">
         </div>
         <div class="content text">
           <div class="description">
             Nie zdajesz się na domyślne rozwiązania. Zmieniasz ustawienia Twojej przeglądarki internetowej tak, by lepiej chroniła Twoją prywatność.
           </div>
         </div>
-        <div class="ui bottom attached button" @click="selectHero()">
-          <i class="add icon"></i>
-          Zobacz poradę
-        </div>
+      </div>
+    </div>
+    <div class="ui grid">
+      <div class="row centered">
+        <bitton @click="next"  class="ui secondary button huge">Dalej</bitton>
       </div>
     </div>
 
@@ -97,8 +86,8 @@
       'selected',
     ]),
     methods: {
-      selectHero(hero) {
-        return this.$router.push('/kompetencje')
+      next(hero) {
+        return this.$router.push('/gra/zagrozenie')
       },
     }
   }
