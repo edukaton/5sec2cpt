@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="image">
-          <img src="./../assets/tor.png">
+          <img :src="'5sec2cpt/static/tor.png'">
         </div>
         <div class="content text">
           <div class="description">

@@ -11,7 +11,7 @@
   <div class="ui grid container">
     <div class="row ui segment">
       <div class="column ten wide">
-        <img class="ui image medium left floated" :src="'/static/' + current.img">
+        <img class="ui image medium left floated" :src="'/5sec2cpt/static/' + current.img">
         <h3 class="quest-title">
           {{ current.title }}
         </h3>
@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="image">
-          <img :src="'/static/' + s.img">
+          <img :src="'/5sec2cpt/static/' + s.img">
         </div>
         <div class="content">
           <div class="description">
