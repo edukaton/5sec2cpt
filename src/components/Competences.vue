@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="image">
-          <img :src="'/static/' + 'tor.png'">
+          <img src="./../assets/tor.png">
         </div>
         <div class="content text">
           <div class="description">
@@ -29,7 +29,7 @@
           </div>
         </div>
         <div class="image">
-          <img :src="'/static/' + 'unikanie.png'">
+          <img src="./../assets/unikanie.png">
         </div>
         <div class="content text">
           <div class="description">
@@ -44,7 +44,7 @@
           </div>
         </div>
         <div class="image">
-          <img :src="'/static/' + 'alternatywna.png'">
+          <img src="./../assets/alternatywna.png">
         </div>
         <div class="content text">
           <div class="description">
@@ -59,7 +59,7 @@
           </div>
         </div>
         <div class="image">
-          <img :src="'/static/' + 'ustawienia.png'">
+          <img src="./../assets/ustawienia.png">
         </div>
         <div class="content text">
           <div class="description">
