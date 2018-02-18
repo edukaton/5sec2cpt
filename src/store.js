@@ -51,6 +51,9 @@ const store = new Vuex.Store({
           answers++
         }
       }
+      if (answers === 0 && state.danger[state.index].critical) {
+        return state.percent = 0
+      }
       if (answers === 0) {
         return state.percent -= 10
       }

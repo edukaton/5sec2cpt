@@ -7,6 +7,7 @@ import LandingPage from '@/components/LandingPage'
 import NewScenario from '@/components/NewScenario'
 import ChooseHero from '@/components/ChooseHero'
 import Competences from '@/components/Competences'
+import EndResult from '@/components/EndResult'
 
 Vue.use(Router)
 
@@ -43,6 +44,10 @@ export default new Router({
   path: '/wybor-postaci',
   name: 'ChooseHero',
   component: ChooseHero
-}
+}, {
+  path: '/koniec',
+  name: 'EndResult',
+  component: EndResult
+},
 ]
 })

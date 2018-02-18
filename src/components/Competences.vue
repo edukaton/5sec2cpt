@@ -98,4 +98,7 @@
   .reveal {
     min-height: 160px;
   }
+  .ui.link.card:hover {
+    transform: none;
+  }
 </style>
