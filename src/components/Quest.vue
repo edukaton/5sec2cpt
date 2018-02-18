@@ -20,8 +20,10 @@
         </p>
       </div>
     </div>
-    <div class="row centered">
-      <button @click="answer" to="rozwiazanie" class="ui secondary button huge">Sprawdzam</button>
+    <div class="ui icon message">
+      <div class="content">
+        <h3>Wybierz maksymalnie dwa sposoby obrony</h3>
+      </div>
     </div>
     <div class="ui row ui four doubling cards">
       <div v-for="s in user_skills" class="ui card fluid link" @click="select(s.id)">
@@ -47,6 +49,9 @@
           Wybrano!
         </div>
       </div>
+    </div>
+    <div class="row centered">
+      <button @click="answer" to="rozwiazanie" class="ui secondary button huge">Sprawdzam</button>
     </div>
   </div>
 </template>
