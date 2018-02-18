@@ -24,8 +24,8 @@
     </div>
     <div class="ui divider"></div>
     <div class="row centered">
-      <button v-if="percent === 0" @click="next" to="rozwiazanie" class="ui secondary button huge">Koniec</button>
-      <button v-if="percent !== 0" @click="toEnd" to="rozwiazanie" class="ui secondary button huge">Dalej</button>
+      <button v-if="percent == 0" @click="toEnd" to="rozwiazanie" class="ui secondary button huge">Koniec</button>
+      <button v-if="percent !== 0" @click="next" to="rozwiazanie" class="ui secondary button huge">Dalej</button>
     </div>
     <div class="row centered">
       <h1>Twoja obrona</h1>
@@ -74,7 +74,7 @@ export default {
       this.$store.commit('next')
       this.$router.push('/gra/zagrozenie')
     },
-    next() {
+    toEnd() {
       this.$router.push('/koniec')
     },
   }
