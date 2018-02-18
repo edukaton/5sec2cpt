@@ -34,13 +34,11 @@
 
         <div class="ui row ui six doubling cards">
           <div v-for="s in all_skills" class="ui card fluid link">
-            <div class="content">
-              <h4 class="">
-                {{ s.title }}
-              </h4>
-            </div>
             <div class="image">
               <img :src="'/5sec2cpt/static/' + s.img">
+            </div>
+            <div class="content">
+              {{ s.title }}
             </div>
             <div v-if="!ifChosen(s.id)" class="ui bottom attached button" :style="'background-color: ' + s.hex + '; color: white'">
               <i class="add icon"></i>
