@@ -41,15 +41,15 @@ export default {
 <style scoped>
 h1 {
   font-size: 45px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
 }
 .icon {
   max-height: 160px;
 }
 .icons {
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 50px !important;
+  margin-top: 50px !important;
 }
 p.info {
   margin-top: 30px;

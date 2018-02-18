@@ -1,4 +1,11 @@
 export default [
+  {
+    "title": "Fałszywe informacje w internecie",
+    "text": "Robiąc research do pracy zaliczeniowej z wiedzy o społeczeństwie znajdujesz stronę, na której znajdujesz wszystkie najważniejsze daty i wydarzenia o zamachach terrorystycznych w ostatnich latach w Europie. Kopiujesz to wszystko do swojego pliku i oddajesz nauczycielowi. Po tygodniu dowiadujesz się, że nie zaliczyłeś przedmiotu, a sprawdzone przez Ciebie informacje są nieprawdziwe.",
+    "img": "przereklamowany.png",
+    "critical": false,
+    "skill": [5,7],
+  },
 {
   "title": "Bańka informacyjna",
   "text": "Koleżanka opowiada Ci o artyście z Ameryki Południowej, którego pseudonim brzmi tak samo jak nazwisko Twojego ulubionego pisarza. Szukasz informacji o nim w sieci. Niestety, okazuje się, że Twoja wyszukiwarka nie zna tego artysty. Na kolejnych stronach wyszukiwań nie znajdujesz o nim żadnej wzmianki, a jedynie informacje o dobrze Ci znanym pisarzu",
@@ -19,12 +26,5 @@ export default [
   "img": "kompromitujace.png",
   "critical": true,
   "skill": [4,8,9],
-},
-{
-  "title": "Fałszywe informacje w internecie",
-  "text": "Robiąc research do pracy zaliczeniowej z wiedzy o społeczeństwie znajdujesz stronę, na której znajdujesz wszystkie najważniejsze daty i wydarzenia o zamachach terrorystycznych w ostatnich latach w Europie. Kopiujesz to wszystko do swojego pliku i oddajesz nauczycielowi. Po tygodniu dowiadujesz się, że nie zaliczyłeś przedmiotu, a sprawdzone przez Ciebie informacje są nieprawdziwe.",
-  "img": "przereklamowany.png",
-  "critical": false,
-  "skill": [5,7],
-},
+}
 ]
