@@ -32,7 +32,7 @@
       <div class="ui divider"></div>
       <div class="ui three column divided grid">
 
-        <div class="ui row ui four doubling cards">
+        <div class="ui row ui six doubling cards">
           <div v-for="s in all_skills" class="ui card fluid link">
             <div class="content">
               <div class="header">
@@ -41,11 +41,6 @@
             </div>
             <div class="image">
               <img :src="'/5sec2cpt/static/' + s.img">
-            </div>
-            <div class="content">
-              <div class="description">
-                {{ s.text }}
-              </div>
             </div>
             <div v-if="!ifChosen(s.id)" class="ui bottom attached button">
               <i class="add icon"></i>
