@@ -100,5 +100,6 @@
   }
   .ui.link.card:hover {
     transform: none;
+    cursor: inherit;
   }
 </style>

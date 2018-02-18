@@ -9,7 +9,7 @@
   }
 }
 .body {
-  padding-top: 90px;
+  padding-top: 75px;
 }
 .fade-enter-active, .fade-leave-active {
   transition: all 0.3s linear;

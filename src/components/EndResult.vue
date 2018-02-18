@@ -48,7 +48,7 @@
     display: inline-block !important;
   }
   .end-btn {
-    margin-top: 20px;
+    margin-top: 20px !important;
   }
   p.info {
     margin-top: 30px;
