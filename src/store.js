@@ -42,6 +42,9 @@ const store = new Vuex.Store({
     },
     user_skills: state => {
       return state.skills.filter(s => user_skill.includes(s.id))
+    },
+    all_skills: state => {
+      return state.skills
     }
   },
   mutations: {

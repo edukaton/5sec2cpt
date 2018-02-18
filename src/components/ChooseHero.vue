@@ -56,7 +56,7 @@
         </div>
         <div class="content text">
           <div class="description">
-            Wiesz, że jakakolwiek obecność i aktywność w sieci zostawia po sobie ślad. Dlatego ograniczasz ją do minimum – kupujesz w realu, nie korzystasz z mediów społecznościowych i dysków do przechowywania danych w chmurze. Przez to odcinasz się od wielu potrzebnych Ci informacji, które mógłbyś znaleźć w sieci. Wiele rzeczy zajmuje Ci też duuużo czasu.
+            Nie jesteś mocny w kodowaniu, ale dobrze znasz dostępne w sieci narzędzia do zabezpieczania się przed kradzieżą danych. Blokujesz reklamy, kładziesz nacisk na mocne hasła i włączasz ustawienia prywatności. Twoja przeglądarka to za każdym uruchomieniem terra incognita. Mimo ostrożności, nadal możesz paść ofiarą „fake newsów” i dezinformacji.
 
           </div>
         </div>
@@ -76,7 +76,7 @@
         </div>
         <div class="content text">
           <div class="description">
-            Nie jesteś mocny w kodowaniu, ale dobrze znasz dostępne w sieci narzędzia do zabezpieczania się przed kradzieżą danych. Blokujesz reklamy, kładziesz nacisk na mocne hasła i włączasz ustawienia prywatności. Twoja przeglądarka to za każdym uruchomieniem terra incognita. Mimo ostrożności, nadal możesz paść ofiarą „fake newsów” i dezinformacji.
+            Wiesz, że jakakolwiek obecność i aktywność w sieci zostawia po sobie ślad. Dlatego ograniczasz ją do minimum – kupujesz w realu, nie korzystasz z mediów społecznościowych i dysków do przechowywania danych w chmurze. Przez to odcinasz się od wielu potrzebnych Ci informacji, które mógłbyś znaleźć w sieci. Wiele rzeczy zajmuje Ci też duuużo czasu.
           </div>
         </div>
         <div class="ui bottom attached button" @click="selectHero()">
