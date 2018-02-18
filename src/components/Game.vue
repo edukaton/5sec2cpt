@@ -15,7 +15,6 @@
   transition: all 0.3s linear;
 }
 .fade-enter, .fade-leave-to {
-  // transform: opacity 0.5s eas-in-out;
   opacity: 0.5
 }
 </style>
