@@ -23,7 +23,7 @@
         </div>
         <div class="ui bottom attached button">
           <i class="add icon"></i>
-          Wybierz Kartę
+          Wybierz bohatera
         </div>
       </div>
       <div class="ui card fluid link" @click="selectHero()">
@@ -42,7 +42,7 @@
         </div>
         <div class="ui bottom attached button">
           <i class="add icon"></i>
-          Wybierz Kartę
+          Wybierz bohatera
         </div>
       </div>
       <div class="ui card fluid link" @click="selectHero()">
@@ -61,7 +61,7 @@
         </div>
         <div class="ui bottom attached button">
           <i class="add icon"></i>
-          Wybierz Kartę
+          Wybierz bohatera
         </div>
       </div>
       <div class="ui card fluid link" @click="selectHero()">
@@ -80,7 +80,7 @@
         </div>
         <div class="ui bottom attached button">
           <i class="add icon"></i>
-          Wybierz Kartę
+          Wybierz bohatera
         </div>
       </div>
     </div>

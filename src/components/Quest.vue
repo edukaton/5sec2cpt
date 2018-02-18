@@ -5,24 +5,26 @@
 .quest-text {
   font-size: 15px;
 }
+  h2 {
+    padding-left: 0 !important;
+  }
+.ui.small.image {
+  margin: 0 auto 20px;
+}
 </style>
 
 <template>
   <div class="ui grid container">
+    <h2>Obroń się przez zagrożeniem, wybierz maksymalnie dwie obrony</h2>
     <div class="row ui segment grey message">
-      <div class="column twelve wide">
-        <img class="ui image medium left floated" :src="'static/' + current.img">
+      <div class="column fifteen wide">
+        <img class="ui image small left floated" :src="'static/' + current.img">
         <h3 class="quest-title">
           {{ current.title }}
         </h3>
         <p class="quest-text">
           {{ current.text }}
         </p>
-      </div>
-    </div>
-    <div class="ui icon message">
-      <div class="content">
-        <h3>Wybierz maksymalnie dwa sposoby obrony</h3>
       </div>
     </div>
     <div class="ui row ui four doubling cards">
@@ -32,8 +34,8 @@
             {{ s.title }}
           </div>
         </div>
-        <div class="image">
-          <img :src="'static/' + s.img">
+        <div class="">
+          <img class="ui small image" :src="'static/' + s.img">
         </div>
         <div class="content">
           <div class="description">
@@ -51,7 +53,7 @@
       </div>
     </div>
     <div class="row centered">
-      <button @click="answer" to="rozwiazanie" class="ui secondary button huge">Sprawdzam</button>
+      <button @click="answer" to="rozwiazanie" class="ui blue button huge">Sprawdzam</button>
     </div>
   </div>
 </template>

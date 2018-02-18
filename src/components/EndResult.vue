@@ -5,13 +5,17 @@
       <div class="ui grid icons">
         <img class="icon" src="./../assets/bagiety.png">
       </div>
-
       <div class="ui message red">
         <div class="header">
           Porażka!
         </div>
         <p>Niestety nie udało Ci się uchronić przed zagrożeniem
           i będziesz musiał tłumaczyć się policji</p>
+      </div>
+      <div class="ui grid one centered end-btn">
+        <router-link to="/" class="ui primary button huge">
+          Strona startowa
+        </router-link>
       </div>
     </div>
 
@@ -42,6 +46,9 @@
   .icons {
     margin-bottom: 50px !important;
     display: inline-block !important;
+  }
+  .end-btn {
+    margin-top: 20px;
   }
   p.info {
     margin-top: 30px;

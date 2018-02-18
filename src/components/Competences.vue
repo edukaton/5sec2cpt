@@ -70,7 +70,7 @@
     </div>
     <div class="ui grid">
       <div class="row centered">
-        <bitton @click="next"  class="ui secondary button huge">Dalej</bitton>
+        <bitton @click="next"  class="ui blue button huge">Dalej</bitton>
       </div>
     </div>
 
